@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Login</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/arcade-favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./login.css">
+
+
+</head>
+
+
+<body>
+
+    <section>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-0 fixed-top" id="mainNavbar">
+            <a class="navbar-brand" href="./gaminglandingpage(1).html">Arcade</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./gaminglandingpage(1).html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav right">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./signup.html"><i class="fa fa-user" aria-hidden="true"></i> SignUp</a>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+
+    </section>
+
+
+    <form class="white-box" action="./php/login.php" method="POST">
+
+        <img src="images/login.png" alt="Login" class="img-fluid img">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" name="email" id="exampleInputemail1" aria-describedby="emailHelp" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name="password" id="exampleInputPassword1" required>
+        </div>
+        <div class="form-group">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="centre btn btn-outline-success ">Login</button>
+
+    </form>
+
+
+</body>
+
+</html>

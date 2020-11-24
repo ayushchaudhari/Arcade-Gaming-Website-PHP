@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./images/chess.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    height: 20rem;
+}
+
+.white-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 300;
+    background-color: white;
+}
+
+#mainNavbar .nav-link {
+    color: black
+}
+
+#mainNavbar .nav-link:hover {
+    color: #1c8dea
+}
+
+#mainNavbar .navbar-brand {
+    color: black;
+    font-size: 2rem;
+}
+
+@media (max-width: 1400px) {
+    #headingroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    
+}
+
